@@ -1,0 +1,94 @@
+   #abc{color: teal;}
+   *{padding: 0 ;margin: 0;}
+html {
+  font-size: 12px; /* 桌面 */ /*針對不同螢幕寬度調整樣式*/
+}
+
+@media (max-width: 600px) {
+  html {font-size: 14px; /* 手機縮小 *//*針對不同螢幕寬度調整樣式*/}
+}
+
+img {
+    max-width: 800px;width: 100%; height: auto;margin: 0 auto; 
+    display: block;/*讓圖片不超出螢幕，並隨比例縮放*/
+}
+body {
+    background-color:black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+
+    color: aliceblue;
+    text-align: center;
+}
+
+header{
+    font-weight: bold;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 0.2em;
+    line-height: 2;
+}
+
+section{
+    background-color: black;
+    color: #feb47b;
+    /*color: rgba(162, 0, 255, 0.985);*/
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+section h1{
+    font-size: 36px;
+    line-height: 1.;
+    font-style: italic;
+}
+
+section h2{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;              /* 讓元素像文字一樣排列，但可設定寬高 */
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* 背景為橫向漸層，從橘紅到橘黃 */
+  color: #fff;                        /* 文字顏色白色 */
+  font-size: 1.9rem;                  /* 字體大小，約比一般文字稍大 */
+  font-weight: bold;                  /* 粗體字，強調 CTA */
+  padding: 12px 24px;                 /* 內距，上下 12px，左右 24px，讓按鈕有空間感 */
+  border-radius: 6px;                 /* 圓角邊框，柔和但無邊框線 */
+  text-decoration: none;              /* 移除超連結的底線 */
+  transition: transform 0.2s ease, background 0.3s ease; /* 滑鼠移入時的動畫效果：縮放 + 背景漸層變化 */
+}
+
+
+.cta-button:hover {
+  transform: scale(1.05);             /* 滑鼠移入時，按鈕放大 5%，增加互動感 */
+  background: linear-gradient(90deg, #feb47b, #ff7e5f); /* 漸層顏色反轉，製造動態效果 */
+}
+
+
+
+iframe{
+    width: 100%; aspect-ratio: 16/9; max-width: 800px;
+    border: none;
+    margin: 0 auto;
+}
+
+
+
+table {
+    width: 40% ; 
+    border: 10px solid lightslategray;
+    margin: 0 auto;
+    border-collapse: collapse;
+   }
+
+   tr{
+    color: aliceblue;
+}
+
+
+footer{
+    color: aliceblue;
+    text-align: justify;
+    }
