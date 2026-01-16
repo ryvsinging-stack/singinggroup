@@ -38,7 +38,7 @@ section{
 }
 
 section h1{
-    font-size: 3em; letter-spacing: 2px; /* 增加字距 */ text-transform: uppercase;/* 全部大寫 */ background: linear-gradient(90deg, #ff00cc, #3333ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; /* 漸層字體效果 */
+    font-size: 2em; letter-spacing: 2px; /* 增加字距 */ text-transform: uppercase;/* 全部大寫 */ background: linear-gradient(90deg, #ff00cc, #3333ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; /* 漸層字體效果 */
 }
 
 section h2{
@@ -47,9 +47,12 @@ section h2{
 }
 
 section h3{
-    font-size: 40px;
-    line-height: 1.5;
+  text-align: left;       /* 文字靠左 */
+  display: inline-block;  /* 讓區塊能被外層置中 */
+  font-size: 16px;
+  line-height: 1.5;
 }
+
 
 .cta-button {
   display: inline-block;              /* 讓元素像文字一樣排列，但可設定寬高 */
